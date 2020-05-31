@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface Ilogin {
 
-      boolean login(String username, String password);
+      int login(String username, String password);
 
 }

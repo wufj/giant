@@ -7,7 +7,7 @@ public class UserVO implements Serializable {
     /**
      * id
      */
-    private  Long id;
+    private  Integer id;
     /**
      * 用户名
      */
@@ -17,11 +17,11 @@ public class UserVO implements Serializable {
      */
     private String password;
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long userId) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

@@ -12,13 +12,13 @@ public class LoginDao  implements IloginDao {
     @Autowired
     private UserMapper userMapper;
 
-    public  boolean loginInset(String username, String password){
+    public  int loginInset(String username, String password){
         UserVO user = new UserVO();
 //        user.setUserId();
-        user.setId(100L);
+        user.setId(100);
         user.setUsername(username);
         user.setPassword(password);
-        boolean result = userMapper.insertUser(user);
+        int result = userMapper.insert(user);
         return result;
     }
 

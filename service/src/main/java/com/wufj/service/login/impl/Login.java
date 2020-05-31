@@ -12,8 +12,8 @@ public class Login implements Ilogin {
     public IloginDao loginDao;
 
     @Override
-    public boolean login(String username, String password) {
-        boolean result = loginDao.loginInset(username,password);
+    public int login(String username, String password) {
+        int result = loginDao.loginInset(username,password);
         return result;
     }
 }

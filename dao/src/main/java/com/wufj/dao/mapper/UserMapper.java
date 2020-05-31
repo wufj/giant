@@ -2,14 +2,14 @@ package com.wufj.dao.mapper;
 
 
 import com.wufj.dao.vo.UserVO;
-import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
-@Mapper
+
+@Repository
 public interface UserMapper {
 
-    boolean insertUser(UserVO user );
+//    @Insert
+    int insert(UserVO user );
 
 }
 

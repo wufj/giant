@@ -20,7 +20,7 @@ public class IndexController {
     private  Object login( String username, String password){
         String name = username;
         String pass = password;
-        boolean result = loginTool.login(name, pass);
+        int result = loginTool.login(name, pass);
         return  result;
     }
 }
