@@ -15,7 +15,7 @@ public class LoginDao  implements IloginDao {
     public  int loginInset(String username, String password){
         UserVO user = new UserVO();
 //        user.setUserId();
-        user.setId(100);
+        user.setId(200);
         user.setUsername(username);
         user.setPassword(password);
         int result = userMapper.insert(user);
